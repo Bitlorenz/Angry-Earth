@@ -29,7 +29,7 @@ public class collisionPlayer : MonoBehaviour
             Rigidbody playerOneRb = collision.gameObject.GetComponent<Rigidbody>();
             Debug.Log("Collided with: " + collision.gameObject.name);
             collided = true;
-            rigidbody.velocity = Vector3.zero;lll
+            rigidbody.velocity = Vector3.zero;
         }
     }
 
