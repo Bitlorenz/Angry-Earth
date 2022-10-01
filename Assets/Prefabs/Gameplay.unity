@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 666106003}
   - component: {fileID: 666106004}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Deateh
   m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -448,7 +448,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.028992593, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -459,7 +459,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.4143804, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &687108195
 GameObject:
@@ -1319,11 +1319,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2435042702714017827, guid: 662c645a04a6d3a4da11ed66c59dd993, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.12
+      value: -4.44
       objectReference: {fileID: 0}
     - target: {fileID: 2435042702714017827, guid: 662c645a04a6d3a4da11ed66c59dd993, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.14
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 2435042702714017827, guid: 662c645a04a6d3a4da11ed66c59dd993, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2183,11 +2183,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1993966952347518276, guid: 01b095c036bd6e64cbc37cf71ac3d775, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 1993966952347518276, guid: 01b095c036bd6e64cbc37cf71ac3d775, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.18
       objectReference: {fileID: 0}
     - target: {fileID: 1993966952347518276, guid: 01b095c036bd6e64cbc37cf71ac3d775, type: 3}
       propertyPath: m_LocalPosition.z
