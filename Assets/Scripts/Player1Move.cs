@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class Player1Move : MonoBehaviour
 {
@@ -69,6 +70,12 @@ public class Player1Move : MonoBehaviour
             isGrounded=true;
             doubleJump=true;
         }
+
+        if (collision.gameObject.CompareTag("Death"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Debug.Log("deat");
+        }
     }
 
     void AnimatePlayer()
@@ -107,4 +114,7 @@ public class Player1Move : MonoBehaviour
             anim.SetBool(IDLE, true);
         }
     }
+
+
+    
 }
