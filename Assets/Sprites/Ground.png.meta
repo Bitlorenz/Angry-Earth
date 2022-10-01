@@ -105,16 +105,16 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ground_0
+      name: Ground 1
       rect:
         serializedVersion: 2
         x: 0
-        y: 246
-        width: 1224
-        height: 35
+        y: 245
+        width: 1225
+        height: 232
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 1}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -126,43 +126,211 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ground_1
+      name: Breakable Platform 1
       rect:
         serializedVersion: 2
-        x: 700
-        y: 280
-        width: 34
-        height: 24
+        x: 1230
+        y: 337
+        width: 69
+        height: 29
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 3}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40aa94c075d3d624caf72fb35cdb8abe
-      internalID: -824168854
+      spriteID: e245e258988498e4a88b3bfa8648adad
+      internalID: -696834451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ground_2
+      name: Ground 2
       rect:
         serializedVersion: 2
-        x: 769
-        y: 281
-        width: 34
-        height: 52
+        x: 1304
+        y: 245
+        width: 64
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 3, w: 2}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 320995245a0470c4c8c201d26e01eee7
-      internalID: 1241361816
+      spriteID: 88a48c6f01a257b4b870fdefbfb5a927
+      internalID: 1320817036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Breakable Platform 2
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 338
+        width: 71
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d744089268ec8774396234e74b23343d
+      internalID: -629883020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground 3
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 247
+        width: 216
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9212427654420dd4798d587c58442a1a
+      internalID: -1749954466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Breakable Platform 3
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 274
+        width: 72
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd4c68901167524289a6f6bcbc5c82e
+      internalID: 415598481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Breakable Platform 4
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 274
+        width: 71
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63daa55889f7744dbab0e90bd3710f6
+      internalID: -1839088463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground 4
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 247
+        width: 242
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0c8e448c709434cba4e6b4239d948f
+      internalID: 880634700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground 6
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 274
+        width: 51
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4703c3d5aa148c84e9293eb1c8e92e40
+      internalID: 560373700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground 7
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 274
+        width: 48
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b17422550444d4faadddbd5e6ac570
+      internalID: -403197982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground 8
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 247
+        width: 234
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aad9144b04fe6c439f32449680ee7a9
+      internalID: -993446981
       vertices: []
       indices: 
       edges: []
@@ -178,8 +346,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ground_0: -1217615054
+      Ground 8: -993446981
+      Breakable Platform 4: -1839088463
+      Breakable Platform 1: -696834451
+      Ground 3: -1749954466
+      Ground 2: 1320817036
+      Ground 7: -403197982
+      Breakable Platform 3: 415598481
       Ground_2: -808739408
+      Breakable Platform 2: -629883020
+      Ground 6: 560373700
+      Ground 4: 880634700
+      Ground 1: -1217615054
       Ground_1: 1114104416
   spritePackingTag: 
   pSDRemoveMatte: 0
