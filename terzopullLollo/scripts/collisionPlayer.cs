@@ -7,6 +7,7 @@ public class collisionPlayer : MonoBehaviour
     public GameObject playerOne;
     private Rigidbody rigidbody;
     private bool collided;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class collisionPlayer : MonoBehaviour
             Debug.Log("Collided with: " + collision.gameObject.name);
             collided = true;
             rigidbody.velocity = Vector3.zero;
+            FindObjectOfType<GameManager>().gameOver();
         }
     }
 
