@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Player1Move : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class Player1Move : MonoBehaviour
     public bool isGrounded = true;
     public bool doubleJump = true;
     public string GROUND = "Ground";
+    public string JUMP = "Jump";
+    public string WALK = "Walk";
+    public string FALL = "Fall";
+    public string IDLE = "Idle";
 
     void Start()
     {
@@ -68,20 +73,36 @@ public class Player1Move : MonoBehaviour
 
     void AnimatePlayer()
     {
+        if (rigidBody.velocity.y == 0 )
+        {
+            anim.SetBool(WALK , false);
+            anim.SetBool(IDLE , true);
+            anim.SetBool(FALL , false);
+            anim.SetBool(JUMP , false);
+        }    
+        if (rigidBody.velocity.y > 0 )
+        {
+            anim.SetBool(JUMP , true);
+        }    
+        if (rigidBody.velocity.y < 0)
+        {
+            anim.SetBool(JUMP , false);
+            anim.SetBool(FALL , true);
+        }
         if (movementX > 0)
         {
-            anim.SetBool("Walk", true);
-            anim.SetBool("Idle", false);
+            anim.SetBool(WALK, true);
+            anim.SetBool(IDLE, false);
         }
         else if (movementX < 0)
         {
-            anim.SetBool("Walk", true);
-            anim.SetBool("Idle", false);
+            anim.SetBool(WALK, true);
+            anim.SetBool(IDLE, false);
         }
         else
         {
-            anim.SetBool("Walk", false);
-            anim.SetBool("Idle", true);
+            anim.SetBool(WALK, false);
+            anim.SetBool(IDLE, true);
         }
     }
 }
