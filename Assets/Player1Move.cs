@@ -48,8 +48,12 @@ public class Player1Move : MonoBehaviour
                 isGrounded = false;
 
             if (doubleJump)
-                doubleJump = false; 
-            rigidBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+                doubleJump = false;
+
+            //rigidBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            //rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            rigidBody.velocity = new Vector2(0f, 0f);//changes velocity to 0
+            rigidBody.velocity = Vector2.up * jumpForce;//moves character with initial velocity 0
         }
     }
 
