@@ -58,6 +58,7 @@ public class Player1Move : MonoBehaviour
 
             rigidBody.velocity = new Vector2(0f, 0f);
             rigidBody.velocity = Vector2.up * jumpForce;
+            Debug.Log("Jump force");
         }
     }
 
@@ -67,7 +68,6 @@ public class Player1Move : MonoBehaviour
         {
             isGrounded=true;
             doubleJump=true;
-            Debug.Log("Ground");
         }
     }
 
