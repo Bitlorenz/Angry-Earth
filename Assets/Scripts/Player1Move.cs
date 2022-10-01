@@ -27,6 +27,7 @@ public class Player1Move : MonoBehaviour
     {
         PlayerMove();
         PlayerJump();
+        AnimatePlayer();
     }
 
     private void FixedUpdate()
@@ -62,6 +63,25 @@ public class Player1Move : MonoBehaviour
             isGrounded=true;
             doubleJump=true;
             Debug.Log("Ground");
+        }
+    }
+
+    void AnimatePlayer()
+    {
+        if (movementX > 0)
+        {
+            anim.SetBool("Walk", true);
+            anim.SetBool("Idle", false);
+        }
+        else if (movementX < 0)
+        {
+            anim.SetBool("Walk", true);
+            anim.SetBool("Idle", false);
+        }
+        else
+        {
+            anim.SetBool("Walk", false);
+            anim.SetBool("Idle", true);
         }
     }
 }
