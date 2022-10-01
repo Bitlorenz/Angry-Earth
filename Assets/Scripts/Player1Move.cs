@@ -82,12 +82,14 @@ public class Player1Move : MonoBehaviour
         }    
         if (rigidBody.velocity.y > 0 )
         {
+            anim.SetBool(IDLE, false);
             anim.SetBool(JUMP , true);
         }    
         if (rigidBody.velocity.y < 0)
         {
             anim.SetBool(JUMP , false);
             anim.SetBool(FALL , true);
+            anim.SetBool(IDLE, false);
         }
         if (movementX > 0)
         {
