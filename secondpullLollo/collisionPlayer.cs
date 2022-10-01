@@ -22,15 +22,21 @@ public class collisionPlayer : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("fuoco"))
         {
             Rigidbody playerOneRb = collision.gameObject.GetComponent<Rigidbody>();
             Debug.Log("Collided with: " + collision.gameObject.name);
             collided = true;
-            rigidbody.velocity = Vector3.zero;lll
+            rigidbody.velocity = Vector3.zero;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        Debug.Log("TriggerEnter di "+collider.gameObject.name);
+        collided = true;
     }
 
     public bool getCollided()
