@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class Player1Move : MonoBehaviour
 {
@@ -69,37 +70,44 @@ public class Player1Move : MonoBehaviour
             isGrounded=true;
             doubleJump=true;
         }
+
+        if (collision.gameObject.CompareTag("Death"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     void AnimatePlayer()
     {
-        if (rigidBody.velocity.y == 0 )
+        if (rigidBody.velocity.y == 0)
         {
-            anim.SetBool(WALK , false);
-            anim.SetBool(IDLE , true);
-            anim.SetBool(FALL , false);
-            anim.SetBool(JUMP , false);
-        }    
-        if (rigidBody.velocity.y > 0 )
+            anim.SetBool(WALK, false);
+            anim.SetBool(IDLE, true);
+            anim.SetBool(FALL, false);
+            anim.SetBool(JUMP, false);
+        }
+        if (rigidBody.velocity.y > 0)
         {
             anim.SetBool(IDLE, false);
-            anim.SetBool(JUMP , true);
-        }    
+            anim.SetBool(JUMP, true);
+        }
         if (rigidBody.velocity.y < 0)
         {
-            anim.SetBool(JUMP , false);
-            anim.SetBool(FALL , true);
+            anim.SetBool(JUMP, false);
+            anim.SetBool(FALL, true);
             anim.SetBool(IDLE, false);
         }
         if (movementX > 0)
         {
             anim.SetBool(WALK, true);
             anim.SetBool(IDLE, false);
+            spriteRenderer.flipX = false;
         }
         else if (movementX < 0)
         {
             anim.SetBool(WALK, true);
             anim.SetBool(IDLE, false);
+            spriteRenderer.flipX = true;
         }
         else
         {

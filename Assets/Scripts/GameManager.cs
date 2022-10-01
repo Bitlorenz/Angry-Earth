@@ -3,11 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
     private Button earthquakeButton;
+
+    [SerializeField]
+    private Camera mainCamera;
 
     [SerializeField]
     private float earthquakePowerCooldown = 3f;
@@ -40,6 +44,7 @@ public class GameManager : MonoBehaviour
     public void SelectEarthquakePower()
     {
         EarthquakePowerSelected = true;
+        DisableEarthquakeButton();
 
         Debug.Log("Earthquake power selected.");
     }
